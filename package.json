@@ -44,6 +44,7 @@
     "react-quill": "^2.0.0",
     "react-widgets": "^5.8.4",
     "shadcn-ui": "^0.8.0",
+    "stripe": "^15.7.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^6.10.4",
