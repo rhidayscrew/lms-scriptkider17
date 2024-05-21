@@ -19,6 +19,7 @@ export async function POST(req: Request) {
       },
     });
 
+    // This response will be sent back to the /teacher/create page's response variable
     return NextResponse.json(course);
   } catch (error) {
     console.log("[COURSES]", error);
