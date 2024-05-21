@@ -5,7 +5,9 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
-
+    /* 
+            This request body came from the /teacher/create/page.tsx post request
+        */
     const { title } = await req.json();
 
     if (!userId) {
@@ -19,7 +21,9 @@ export async function POST(req: Request) {
       },
     });
 
-    // This response will be sent back to the /teacher/create page's response variable
+    /*
+            This response will be sent back to the /teacher/create/page.tsx response variable
+        */
     return NextResponse.json(course);
   } catch (error) {
     console.log("[COURSES]", error);
